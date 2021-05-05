@@ -1,0 +1,12 @@
+admin user name :admin
+admin-password :admin
+ENV NAME: myenv
+PROJECT NAME: My_First_Project
+APP NAME: first_app
+
+DETAILS:
+asgiref==3.3.4
+Django==3.2
+pytz==2021.1
+sqlparse==0.4.1
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>This is form page</h1>
+    <form action="#" method="POST">
+
+        {{test_form.as_p }}
+        {% csrf_token %}
+         
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <hr>
+
+    <h1>This is submit page for form page--</h1>
+    {% if form_submited %}
+        <p>Name: {{user_name}} </p>
+        <p>Date of Birth: {{user_dob}} </p>
+        <p>Email: {{user_email}} </p>
+    {% endif %}
+        
+
+    
+</body>
+</html>
